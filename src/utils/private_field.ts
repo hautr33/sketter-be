@@ -1,0 +1,169 @@
+export const UserPrivateFields = [
+    [
+        "password",
+        "passwordResetToken",
+        "passwordResetExpires",
+        "passwordUpdatedAt",
+        "verifyCode",
+        "verifyCodeExpires",
+        "gender",
+        "dob",
+        "phone",
+        "address",
+        "owner",
+        "isActive",
+        "authType",
+        "firebaseID",
+        "createdAt",
+        "updatedAt",
+        "roleID",
+        "travelerPersonalities",
+        "commissionRate"
+    ],
+    // Admin
+    [
+        "password",
+        "passwordResetToken",
+        "passwordResetExpires",
+        "passwordUpdatedAt",
+        "verifyCode",
+        "verifyCodeExpires",
+        "gender",
+        "dob",
+        "phone",
+        "address",
+        "owner",
+        "isActive",
+        "authType",
+        "firebaseID",
+        "createdAt",
+        "updatedAt",
+        "roleID",
+        "travelerPersonalities",
+        "commissionRate"
+    ],
+    // Supplier Manager
+    [
+        "password",
+        "passwordResetToken",
+        "passwordResetExpires",
+        "passwordUpdatedAt",
+        "verifyCode",
+        "verifyCodeExpires",
+        "gender",
+        "dob",
+        "phone",
+        "owner",
+        "isActive",
+        "authType",
+        "firebaseID",
+        "createdAt",
+        "updatedAt",
+        "roleID",
+        "travelerPersonalities",
+        "commissionRate"
+    ],
+    // Supplier
+    [
+        "password",
+        "passwordResetToken",
+        "passwordResetExpires",
+        "passwordUpdatedAt",
+        "verifyCode",
+        "verifyCodeExpires",
+        "gender",
+        "dob",
+        "isActive",
+        "authType",
+        "firebaseID",
+        "createdAt",
+        "updatedAt",
+        "roleID",
+        "travelerPersonalities"
+    ],
+    // Traveler
+    [
+        "password",
+        "passwordResetToken",
+        "passwordResetExpires",
+        "passwordUpdatedAt",
+        "verifyCode",
+        "verifyCodeExpires",
+        "owner",
+        "isActive",
+        "authType",
+        "firebaseID",
+        "createdAt",
+        "updatedAt",
+        "roleID",
+        "commissionRate"
+    ]
+]
+
+export class DestinationPrivateFields {
+    static default = [
+        "supplierID",
+        "createdBy",
+        "createdAt",
+        "deletedAt",
+        "updatedAt",
+        'latinName',
+        'image',
+        'cityID',
+    ];
+    static getAllTraveler = [
+        'cityID',
+        "phone",
+        'latinName',
+        "email",
+        "description",
+        "longitude",
+        "latitude",
+        "lowestPrice",
+        "highestPrice",
+        "openingTime",
+        "closingTime",
+        "estimatedTimeStay",
+        "status",
+        "avgRating",
+        "view",
+        "totalRating",
+        "supplierID",
+        "createdBy",
+        "createdAt",
+        "updatedAt",
+        "deletedAt",
+        'isHaveVoucher'
+    ]
+    static getAllSupplier = [
+        'cityID',
+        "phone",
+        'latinName',
+        "email",
+        "description",
+        "longitude",
+        "latitude",
+        "openingTime",
+        "closingTime",
+        "estimatedTimeStay",
+        "view",
+        "totalRating",
+        "supplierID",
+        "createdBy",
+        "createdAt",
+        "updatedAt",
+        "deletedAt",
+        'isHaveVoucher'
+    ]
+}
+
+export class PlanPrivateFields {
+    static default = [
+        "isActive",
+        "travelerID",
+        "stayDestinationID",
+        "actualStayDestinationID",
+        "deletedAt",
+        "updatedAt"
+    ];
+}
